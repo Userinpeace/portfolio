@@ -590,18 +590,60 @@ export default function CyberpunkPortfolio() {
                 together.
               </p>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                  <span className="font-mono">EMAIL: rahulpawar96110211@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                  <span className="font-mono">GITHUB: /Userinpeace</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-                  <span className="font-mono">LINKEDIN: /in/rahul-pawar-734745157</span>
-                </div>
+                <motion.a 
+                  href="mailto:rahulpawar96110211@gmail.com"
+                  className="flex items-center space-x-4 p-3 rounded-lg contact-card transition-all duration-300 group"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  onMouseEnter={() => playSound("hover")}
+                  onClick={() => playSound("click")}
+                >
+                  <div className="relative">
+                    <Mail className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+                    <div className="absolute inset-0 w-6 h-6 bg-primary/20 rounded-full blur-lg group-hover:bg-accent/30 transition-all duration-300"></div>
+                  </div>
+                  <div>
+                    <div className="font-mono text-sm text-muted-foreground group-hover:text-accent transition-colors duration-300">EMAIL</div>
+                    <div className="font-mono text-foreground group-hover:text-primary transition-colors duration-300">rahulpawar96110211@gmail.com</div>
+                  </div>
+                </motion.a>
+                
+                <motion.a 
+                  href="https://github.com/Userinpeace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-3 rounded-lg contact-card transition-all duration-300 group"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  onMouseEnter={() => playSound("hover")}
+                  onClick={() => playSound("click")}
+                >
+                  <div className="relative">
+                    <Github className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+                    <div className="absolute inset-0 w-6 h-6 bg-primary/20 rounded-full blur-lg group-hover:bg-accent/30 transition-all duration-300"></div>
+                  </div>
+                  <div>
+                    <div className="font-mono text-sm text-muted-foreground group-hover:text-accent transition-colors duration-300">GITHUB</div>
+                    <div className="font-mono text-foreground group-hover:text-primary transition-colors duration-300">github.com/Userinpeace</div>
+                  </div>
+                </motion.a>
+                
+                <motion.a 
+                  href="https://linkedin.com/in/rahul-pawar-734745157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-3 rounded-lg contact-card transition-all duration-300 group"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  onMouseEnter={() => playSound("hover")}
+                  onClick={() => playSound("click")}
+                >
+                  <div className="relative">
+                    <Linkedin className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+                    <div className="absolute inset-0 w-6 h-6 bg-primary/20 rounded-full blur-lg group-hover:bg-accent/30 transition-all duration-300"></div>
+                  </div>
+                  <div>
+                    <div className="font-mono text-sm text-muted-foreground group-hover:text-accent transition-colors duration-300">LINKEDIN</div>
+                    <div className="font-mono text-foreground group-hover:text-primary transition-colors duration-300">linkedin.com/in/rahul-pawar-734745157</div>
+                  </div>
+                </motion.a>
               </div>
             </div>
             <Card className="cyber-card glass-enhanced p-8 gpu-accelerated">
@@ -661,9 +703,52 @@ export default function CyberpunkPortfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-muted-foreground font-mono">© 2025 USERINPEACE - ALL RIGHTS RESERVED</p>
+      <footer className="border-t border-border py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Social Links */}
+            <div className="flex items-center space-x-6">
+              <motion.a
+                href="mailto:rahulpawar96110211@gmail.com"
+                className="p-3 rounded-full social-icon cyber-card transition-all duration-300 group"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                onMouseEnter={() => playSound("hover")}
+                onClick={() => playSound("click")}
+              >
+                <Mail className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+              </motion.a>
+              
+              <motion.a
+                href="https://github.com/Userinpeace"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full social-icon cyber-card transition-all duration-300 group"
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                onMouseEnter={() => playSound("hover")}
+                onClick={() => playSound("click")}
+              >
+                <Github className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+              </motion.a>
+              
+              <motion.a
+                href="https://linkedin.com/in/rahul-pawar-734745157"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full social-icon cyber-card transition-all duration-300 group"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                onMouseEnter={() => playSound("hover")}
+                onClick={() => playSound("click")}
+              >
+                <Linkedin className="w-6 h-6 text-primary group-hover:text-accent transition-colors duration-300 icon-glow" />
+              </motion.a>
+            </div>
+            
+            {/* Copyright */}
+            <div className="text-center space-y-2">
+              <p className="text-muted-foreground font-mono">© 2025 USERINPEACE - ALL RIGHTS RESERVED</p>
+              <p className="text-muted-foreground/70 font-mono text-sm">BUILT WITH ❤️ & CYBERPUNK AESTHETICS</p>
+            </div>
+          </div>
         </div>
       </footer>
 
