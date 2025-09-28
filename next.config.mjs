@@ -13,9 +13,6 @@ const nextConfig = {
   // Remove output: 'export' for Vercel deployment
   // output: 'export',
   trailingSlash: false,
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 export default nextConfig
