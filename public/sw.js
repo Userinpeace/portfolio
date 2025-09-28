@@ -1,9 +1,12 @@
 const CACHE_NAME = 'cyberpunk-portfolio-v1';
 const urlsToCache = [
   '/',
-  '/3d-text-explosion-animation.jpg',
-  '/mario-trails-animation.jpg',
-  '/ai-live-platform.jpg',
+  '/3d-text-explosion-animation.png',
+  '/mario-trails-animation.png',
+  '/ai-live-platform.png',
+  '/futuristic-neural-network-dashboard-with-glowing-n.jpg',
+  '/quantum-computing-interface-with-glowing-circuits.jpg',
+  '/cybersecurity-threat-map-with-neon-indicators.jpg',
 ];
 
 // Install event
