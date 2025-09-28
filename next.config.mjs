@@ -8,11 +8,14 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    formats: ['image/webp', 'image/avif'],
   },
-  output: 'export',
-  trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  // Remove output: 'export' for Vercel deployment
+  // output: 'export',
+  trailingSlash: false,
+  experimental: {
+    optimizeCss: true,
+  },
 }
 
 export default nextConfig

@@ -200,7 +200,7 @@ export default function CyberpunkPortfolio() {
       description: "Interactive 3D text animation with explosive particle effects",
       fullDescription: "A stunning 3D text animation project that creates explosive particle effects when text elements are triggered. Built with modern web technologies, it features dynamic particle systems, realistic physics simulations, and smooth WebGL-based animations that respond to user interactions in real-time.",
       tech: ["JavaScript", "Three.js", "WebGL", "GSAP", "CSS3", "HTML5"],
-      image: "/3d-text-explosion-animation.PNG",
+      image: "/3d-text-explosion-animation.png",
       demoUrl: "https://userinpeace.github.io/3D-Animated-Text-Explosion-",
       githubUrl: "https://github.com/Userinpeace/3D-Animated-Text-Explosion-",
       features: [
@@ -220,7 +220,7 @@ export default function CyberpunkPortfolio() {
       description: "Interactive Mario-themed animation with dynamic trail effects",
       fullDescription: "A creative web animation project featuring Mario character with dynamic trail effects and interactive gameplay elements. The project showcases advanced CSS animations, JavaScript interactions, and smooth character movement with particle trail systems that create an engaging visual experience.",
       tech: ["JavaScript", "CSS3", "HTML5", "Canvas API", "Animation API", "DOM"],
-      image: "/mario-trails-animation.PNG",
+      image: "/mario-trails-animation.png",
       demoUrl: "https://userinpeace.github.io/mario-trails",
       githubUrl: "https://github.com/Userinpeace/mario-trails",
       features: [
@@ -240,7 +240,7 @@ export default function CyberpunkPortfolio() {
       description: "Real-time AI-powered live interaction platform",
       fullDescription: "An innovative AI-powered platform that enables real-time interactions and live communication features. The project integrates advanced AI capabilities with modern web technologies to create seamless user experiences, featuring real-time data processing, intelligent responses, and dynamic content generation.",
       tech: ["React", "Node.js", "AI/ML APIs", "WebSocket", "Express.js", "MongoDB"],
-      image: "/ai-live-platform.PNG",
+      image: "/ai-live-platform.png",
       demoUrl: "https://userinpeace.github.io/ai-live",
       githubUrl: "https://github.com/Userinpeace/ai-live",
       features: [
