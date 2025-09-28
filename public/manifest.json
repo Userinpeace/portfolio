@@ -1,0 +1,26 @@
+{
+  "name": "Rahul Pawar Portfolio",
+  "short_name": "RahulPawar",
+  "description": "Cyberpunk-themed portfolio showcasing cutting-edge web development projects by Rahul Pawar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#00ffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en-US",
+  "scope": "/",
+  "prefer_related_applications": false
+}
